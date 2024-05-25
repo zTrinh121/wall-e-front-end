@@ -18,9 +18,9 @@
         </div>
         <div class="top_menu">
           <div class="logo">Wall-E</div>
-          <form class="search">
+          <form action="../search/index.html" class="search">
             <i class="fa fa-search"></i>
-            <input type="text" placeholder="Tìm kiếm lớp học, trung tâm, ...">
+            <input type="text" placeholder="Tìm kiếm thông báo, tài khoản">
             <button type="submit">Tìm</button>
         </form>
         <div class="profile-dropdown">
@@ -90,14 +90,9 @@
               <span class="title">Quản lý người dùng</span>
             </a>
           </li>
+          
           <li>
-            <a href="#">
-              <span class="icon"><i class="fas fa-bell"></i></span>
-              <span class="title">Thông báo</span>
-            </a>
-          </li>
-          <li>
-            <a href="../approveManagement/index.html" class="active">
+            <a href="../approveManagement/index.html">
               <span class="icon"><i class="fas fa-check"></i></span>
               <span class="title">Duyệt bài đăng </span>
             </a>
@@ -112,7 +107,7 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1>Tạo bài đăng</h1> 
+                        <h1>Tạo thông báo</h1> 
                     </div>
                     
                 </div>
@@ -126,9 +121,10 @@
                            <textarea id="story" name="story" >
                             
                             </textarea>
+                            <input type="file" id="file-upload" required />
                         </div>
                         <div class="btn-group">
-                          <button href="../approveManagement/index.html" id="btn-back">Quay lại</button>
+                          <button onclick="history.back()" id="btn-back">Quay lại</button>
                           <div class="btn=approve">
                             <button id="btn-deny">Tạo bài</button>
                           </div>

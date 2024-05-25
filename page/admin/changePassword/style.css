@@ -357,6 +357,10 @@ box-shadow: var(--shadow); */
 
 }
 
+.forgot-pass{
+  text-align: right;
+}
+
 .profile-btn-submit {
   background: #2e4ead;
   color: #fff;

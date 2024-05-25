@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Duyệt bài</title>
+    <title>Tổng quan</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -20,9 +20,9 @@
         </div>
         <div class="top_menu">
           <div class="logo">Wall-E</div>
-          <form action="../search/index.html" class="search">
+          <form class="search">
             <i class="fa fa-search"></i>
-            <input type="text" placeholder="Tìm kiếm thông báo, tài khoản">
+            <input type="text" placeholder="Tìm kiếm thông báo tài khoản">
             <button type="submit">Tìm</button>
         </form>
         <div class="profile-dropdown">
@@ -87,14 +87,14 @@
             >
           </li>
           <li>
-            <a href="../accountManagement/index.html">
+            <a href="index.html">
               <span class="icon"><i class="fas fa-clipboard-list"></i></i></span>
               <span class="title">Quản lý người dùng</span>
             </a>
           </li>
           
           <li>
-            <a href="#" class="active">
+            <a href="../approveManagement/index.html">
               <span class="icon"><i class="fas fa-check"></i></span>
               <span class="title">Duyệt bài</span>
             </a>
@@ -109,42 +109,34 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1>Duyệt bài</h1>
+                        <h1>Kết quả tìm kiếm</h1>
                         
                     </div>
+                    
                 </div>
+
                 <div class="table-data">
                     <div class="order">
                         <div class="head">
-                            <h3>Danh sách bài duyệt</h3>
-                            <div class="filter">
-                              <button onclick="navigateCreatePost()" class="btn-create">
-                               
-                              <i class="fas fa-plus"></i>
-                                Tạo bài đăng 
-                              </button>
-                              <select name="roles" id="role">
-                                <option value="all">Tất cả</option>
-                                <option value="teacher">Bài đăng</option>
-                                <option value="student">Trung tâm</option>
-                              </select>
-                            </div>
+                            <h3>Danh sách tìm kiếm</h3>
+                            
                         </div>
                         <table id="user-account">
                             <thead>
                                 <tr>
                                     <th><p>Tiêu đề</p></th>
                                     <th><p>Ngày</p></th>
-                                    <th><p></p></th>
-                                    <th><p>Phê duyệt</p></th>
-                                    
-
+                                    <th><p>Chi tiết</p></th>
                                 </tr>
                             </thead>
                             <tbody id="tableBody">
 
                             </tbody>
                         </table>
+                        <!-- Toast Notification -->
+    <div id="toast" class="toast">
+      <div id="toastMessage"></div>
+  </div>
                     </div>
                     <!--  -->
                 </div>

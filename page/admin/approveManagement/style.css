@@ -725,6 +725,7 @@ box-shadow: var(--shadow); */
 	height: 1.5rem;
 	background: #fff;
 	color: #2e4ead;
+	border: 1px solid #2e4ead;
 }
 
 #content main .table-data .order table tr td p {
