@@ -43,6 +43,21 @@ export const userList = [
       "C14_USER_EMAIL": "admin@example.com",
       "C14_ROLE_ID": 3,
       "C14_PARENT_ID": null
+    },
+    {
+      "C14_USER_ID": 4,
+      "C14_USER_USERNAME": "admin",
+      "C14_USER_PASSWORD": "admin1234",
+      "C14_ACC_STATUS": 1,
+      "C14_USER_CODE": 10003,
+      "C14_USER_NAME": "Administrator",
+      "C14_USER_PHONE": "1239876540",
+      "C14_USER_ADDRESS": "789 High Avenue",
+      "C14_USER_DOB": "1980-10-26",
+      "C14_USER_GENDER": 1,
+      "C14_USER_EMAIL": "admin@example.com",
+      "C14_ROLE_ID": 4,
+      "C14_PARENT_ID": null
     }
   ]
   

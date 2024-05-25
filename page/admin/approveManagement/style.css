@@ -626,13 +626,13 @@ box-shadow: var(--shadow); */
 #content main .table-data .order .head .filter .btn-create {
 	background: #2e4ead;
 	border: none;
-	width: 8.5rem;
+	width: 9rem;
 	height: 2.5rem;
 	border-radius: 1rem;
 	color: #fff;
 	font-size: 16px;
 	cursor: pointer;
-	text-align: justify;
+	text-align: center;
 }
 
 #content main .table-data .order .head .filter .btn-create i {
