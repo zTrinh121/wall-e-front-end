@@ -211,7 +211,7 @@ box-shadow: var(--shadow); */
 /* End drop down */
 
 
-/* Start sidebar */
+
 .wrapper .sidebar {
   position: fixed;
   top: 70px;
@@ -267,8 +267,8 @@ box-shadow: var(--shadow); */
 .wrapper .main_container {
   width: (100% - 200px);
   margin-top: 70px;
-  margin-left: 220px;
-  padding: 20px;
+  margin-left: 200px;
+  padding: 15px;
   transition: all 0.3s ease;
 }
 
@@ -301,74 +301,176 @@ box-shadow: var(--shadow); */
   margin-left: 70px;
 }
 
-/* Form */
-.wrapper .main_container h4 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+/* CONTENT */
+#content {
+	width: 100%;
+	transition: .3s ease;
 }
-
-.wrapper .main_container .avatar {
-  display: flex;
-  justify-content: start;
-}
-
-
-.wrapper .main_container .avatar-image  {
-  width: 35%;
-  margin-bottom: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.avatar-desc {
-  font-size: 0.7rem;
-  color: #6d6d6f;
-  margin-top: 0.5rem;
-
+#sidebar.hide ~ #content {
+	width: calc(100% - 60px);
+	left: 60px;
 }
 
 
-.profile-info label {
-  display: inline-block;
-  width: 20%;
+
+
+/* NAVBAR */
+#content nav {
+	height: 56px;
+	background: #F9F9F9;
+	padding: 0 24px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	font-family: 'Lato', sans-serif;
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+#content nav::before {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	bottom: -40px;
+	left: 0;
+	border-radius: 50%;
+	box-shadow: -20px -20px 0 #F9F9F9;
+}
+#content nav a {
+	color: #342E37;
 }
 
-.profile-info .profile-input input {
-  width: 79%;
-  height: 2.5rem;
-  border-radius: 10px;
-  border: 0.5px solid #ccc;
-  padding-left: 0.5rem;
-  font-size: 0.9rem;
-  color: #6d6d6f;
+#content nav .nav-link {
+	font-size: 16px;
+	transition: .3s ease;
 }
 
-.profile-input {
-  margin-bottom: 0.5rem;
-}
 
-.profile-submit {
-  display: flex;
-  justify-content: end;
 
-}
 
-.profile-btn {
-  border-radius: 10px;
-  border: none;
 
-}
 
-.forgot-pass{
-  text-align: right;
-}
 
-.profile-btn-submit {
-  background: #2e4ead;
-  color: #fff;
+/* MAIN */
+#content{
   margin-top: 1rem;
-  height: 2.5rem;
-  font-size: 1rem;
-  width: 7rem;
+}
+#content main {
+	width: 100%;
+	padding: 10px 24px;
+	font-family:'Poppins', sans-serif;
+	max-height: calc(100vh - 56px);
+	overflow-y: auto;
+}
+#content main .head-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+}
+#content main .head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: #342E37;
 }
 
-/* End form */
+
+#content main .box-info li .text h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #342E37;
+}
+#content main .box-info li .text p {
+	color: #342E37;	
+}
+
+#content main .notification{
+	width: 100%;
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 20px
+}
+
+
+#content main .notification .email-head input{
+  width: 88%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#content main .notification .email-head input:focus{
+  width: 88%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#content main .notification h4{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+#content main .notification .email-detail{
+	font-size: 14px;
+	font-weight: 400;
+	color: #342E37;
+	line-height: 1.2rem;
+  margin-top: 1rem;
+	
+}
+
+#content main .notification .email-detail #story{
+  width: 100%;
+  height: 7rem;
+}
+
+#content main .notification .btn-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+#content main .notification button{
+	margin-top: 1rem;
+	border-radius: 1rem;
+	background-color: #2648ae;
+	width: 6rem;
+	color: #fff;
+	border: none;
+	height: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#content main .notification #btn-approve:hover, #btn-back{
+  color: #2648ae;
+  background: #fff;
+  border: 1px solid #2648ae;
+  transition-duration: 0.4s;
+}
+
+#content main .notification #btn-deny{
+  color: #2648ae;
+  background: #fff;
+  border: 1px solid #2648ae;
+}
+
+
+#content main .notification #btn-deny:hover{
+  color: #fff;
+  background: #2648ae;
+  transition-duration: 0.4s;
+}
+
+
+
+
+/* MAIN */
+/* CONTENT */
+

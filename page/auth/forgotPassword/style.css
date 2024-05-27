@@ -45,9 +45,6 @@ form input{
   text-decoration: none;
   color: #07001f;
 }
-a{
-  cursor: pointer;
-}
 
 .recover a:hover{
   text-decoration: none;
