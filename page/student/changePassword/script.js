@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Start: Drop down
+// : Drop down
 
 // Start: Hamburger
 $(document).ready(function () {
